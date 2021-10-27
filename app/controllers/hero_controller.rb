@@ -4,18 +4,18 @@ class HeroController < ApplicationController
         heros.to_json
     end
 
-    get '/heros/mage' do
-        mageHeros = Hero.find_by_name("Mage").cards
-        mageHeros.to_json
+    get '/heros/Mage' do
+        mage = Hero.find_by_name("Mage").cards
+        mage.to_json
     end
 
-    get '/heros/druid' do
-        mageHeros = Hero.find_by_name("Druid").cards
-        mageHeros.to_json
+    get '/heros/Druid' do
+        druid = Hero.find_by_name("Druid").cards
+        druid.to_json
     end
 
     get '/heros/warrior' do
-        mageHeros = Hero.find_by_name("warrior").cards
-        mageHeros.to_json
+        warrior = Hero.find_by_name("warrior").cards
+        warrior.to_json
     end
 end
