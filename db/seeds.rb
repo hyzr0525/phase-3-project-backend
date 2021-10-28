@@ -13,7 +13,7 @@ puts "Added Heros"
 
 mage = Hero.create(name: "Mage")
 druid = Hero.create(name: "Druid")
-warrior = Hero.create(name: "warrior")
+warrior = Hero.create(name: "Warrior")
 
 puts "Created Mage Cards"
 

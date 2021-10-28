@@ -14,8 +14,8 @@ class HeroController < ApplicationController
         druid.to_json
     end
 
-    get '/heros/warrior' do
-        warrior = Hero.find_by_name("warrior").cards
+    get '/heros/Warrior' do
+        warrior = Hero.find_by_name("Warrior").cards
         warrior.to_json
     end
 end
