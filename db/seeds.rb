@@ -57,8 +57,8 @@ card10 = Card.create(name: "Shield Slam", img: "https://d15f34w2p8l1cc.cloudfron
 
 puts "Create Dummy Decks"
 
-deck1 = Deck.create(name: "Deck 1", user_id: user1.id)
-deck2 = Deck.create(name: "Deck 2", user_id: user1.id)
+deck1 = Deck.create(name: "Deck 1", user_id: user1.id, hero_id: warrior.id)
+deck2 = Deck.create(name: "Deck 2", user_id: user1.id, hero_id: warrior.id)
 
 puts "Create Dummy Card Deck Table"
 
