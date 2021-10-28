@@ -25,7 +25,7 @@ class DeckController < ApplicationController
     end
 
     delete '/decks/:id/:card_id' do
-        card = Deck.find(params[:id]).delete_card(params[:card_id])
-        # binding.pry
+        converted = params[:card_id].to_i
+        card = Deck.find(params[:id]).delete_card(converted)
     end
 end

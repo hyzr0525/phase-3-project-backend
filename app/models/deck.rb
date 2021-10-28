@@ -3,8 +3,9 @@ class Deck < ActiveRecord::Base
     belongs_to :user
     has_many :cards, through: :card_decks
 
-    # works in pry console, but doesn't appear to be working in controller.  I'll try another method
+    # take a deck id and a card id, find the card_deck id and delete it
     def delete_card(card_id)
-        self.card_decks.find {|value| value.card_id == card_id}
+        card = self.card_decks.find {|value| value.card_id == card_id}
+        card.destroy
     end
 end
