@@ -15,7 +15,7 @@ class DeckController < ApplicationController
     end
 
     post '/decks' do
-        new_deck = Deck.create(name: params[:name], user_id: params[:user_id])
+        new_deck = Deck.create(name: params[:name], user_id: params[:user_id], hero_id: params[:hero_id])
         new_deck.to_json
     end
 
